@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+    body {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        main{
+            padding: 1rem;
+        }
+        .main-header {
+            width: 100%;
+            height: 3.5rem;
+            background-color: #dbc441;
+            padding: 0 1.5rem;
+        }
+        .main-header__nav{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .main-header__item-list{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .main-header__item{
+            margin: 0 1rem;
+            padding: 0;
+        }
+        .main-header__item a{
+            text-decoration: none;
+            color: white;
+        }
+        .main-header__item a:hover,
+        .main-header__item a:active,
+        .main-header__item a:active{
+            color: #6200ff;
+        }
+
+
+
+
+
+        .main-form {
+            padding-top: 30px;
+            padding-left: 21rem;
+            padding-right: 21rem;
+            /* border: 1px solid black ; */ 
+
+        }
+        .main-form__div {
+            padding-left: 10px;
+            border: 2px solid black;
+            background: #89aae9;
+        }
+        .main-form__input{
+            width: 35rem;
+        }
+        .main-form__submit{
+            width: 35.5rem;
+        }
+        button{
+            font:inherit;
+            border:1px solid #6200ff;
+            color: #6200ff;
+            background: white;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover,
+        button:active{
+            background-color: #6200ff;
+            color: white;
+        }
+        .main-form__input-time{
+            width:100%;
+        }
+        .main-form__heading {
+            text-align: center;
+        }
+        .main-form__line{
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a class="active" href="/">Shop</a></li>
+                <li class="main-header__item"><a href="/admin/add-product">Add Product</a></li>
+                <li class="main-header__item"><a href="/contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-form"  >
+        <div class="main-form__div">
+            <h1 class="main-form__heading">Book a call</h1>
+            <h3>Book a call slot and our representative will call you within 1hr of selected time.</h3><hr class="main-form__line">
+            <form action="/success" method="POST" class="main-form__form">
+                <label for="name" >Name:</label> <br>
+                <input type="text" name="name" id="name" class="main-form__input"><br><br>
+                <label for="email" class="main-form__email">Email:</label><br>
+                <input type="email" name="email" id="email" class="main-form__input"><br><br>
+                <button type="submit" class="main-form__submit">Book A Call</button>  
+            </div>
+        </form>
+    </main>
+</body>
+</html>
